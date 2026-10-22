@@ -1,0 +1,12 @@
+services:
+  buzzscope:
+    build: .
+    ports:
+      - "8501:8501"
+    env_file:
+      - path: .env
+        required: false
+    volumes:
+      - ./data/cache:/app/data/cache   # keeps the PTT scrape cache between runs
+    environment:
+      BUZZSCOPE_DB: /app/data/cache/buzzscope.db

@@ -1,0 +1,165 @@
+{
+  "summary": {
+    "event_recall": 1.0,
+    "event_precision": 1.0,
+    "decoy_rejection": 1.0,
+    "cause_accuracy": 1.0,
+    "sentiment_accuracy": 0.889,
+    "evidence_precision": 1.0
+  },
+  "scenarios": [
+    {
+      "scenario": "coffee",
+      "checks": [
+        {
+          "event_id": "coffee_ice",
+          "planted_date": "2026-08-12",
+          "is_decoy": false,
+          "finding_date": "2026-08-12",
+          "finding_kind": "event",
+          "cause_ok": true,
+          "sentiment_ok": true,
+          "evidence_hits": 2,
+          "evidence_total": 2,
+          "cause": "衛生局抽驗公布：晨光咖啡多家門市的冰塊大腸桿菌（E. coli）超標，品牌宣布配合複驗。"
+        },
+        {
+          "event_id": "coffee_decoy_sunrise",
+          "planted_date": "2026-08-27",
+          "is_decoy": true,
+          "finding_date": "2026-08-27",
+          "finding_kind": "unrelated",
+          "cause_ok": null,
+          "sentiment_ok": null,
+          "evidence_hits": 0,
+          "evidence_total": 0,
+          "cause": "關鍵字撞名：多篇文章在討論「晨光」指的是山上拍攝的日出/雲海（合歡山晨光），與品牌無關。"
+        },
+        {
+          "event_id": "coffee_collab",
+          "planted_date": "2026-09-08",
+          "is_decoy": false,
+          "finding_date": "2026-09-08",
+          "finding_kind": "event",
+          "cause_ok": true,
+          "sentiment_ok": true,
+          "evidence_hits": 2,
+          "evidence_total": 2,
+          "cause": "晨光咖啡與人氣動畫合作的聯名杯套開賣，門市快速售罄並引發排隊與網拍炒價現象。"
+        },
+        {
+          "event_id": "coffee_app",
+          "planted_date": "2026-09-30",
+          "is_decoy": false,
+          "finding_date": "2026-09-30",
+          "finding_kind": "event",
+          "cause_ok": true,
+          "sentiment_ok": true,
+          "evidence_hits": 2,
+          "evidence_total": 2,
+          "cause": "晨光咖啡官方 App / 優惠券系統在買一送一等活動期間當機，導致消費者無法順利使用優惠，官方宣布延長活動三天作為補償。"
+        }
+      ],
+      "n_event_findings": 3,
+      "n_true_event_findings": 3
+    },
+    {
+      "scenario": "tea",
+      "checks": [
+        {
+          "event_id": "tea_price",
+          "planted_date": "2026-08-05",
+          "is_decoy": false,
+          "finding_date": "2026-08-05",
+          "finding_kind": "event",
+          "cause_ok": true,
+          "sentiment_ok": false,
+          "evidence_hits": 3,
+          "evidence_total": 3,
+          "cause": "公司宣布自下週起全品項每杯調漲5元，理由為原物料與人事成本上升。"
+        },
+        {
+          "event_id": "tea_expired",
+          "planted_date": "2026-09-16",
+          "is_decoy": false,
+          "finding_date": "2026-09-16",
+          "finding_kind": "event",
+          "cause_ok": true,
+          "sentiment_ok": true,
+          "evidence_hits": 2,
+          "evidence_total": 2,
+          "cause": "前員工爆料並引發新聞報導，指稱部分門市將過期茶葉重新貼標後使用，公司回應啟動內部調查並有衛生單位要稽查、暫停相關門市營業。"
+        },
+        {
+          "event_id": "tea_taro",
+          "planted_date": "2026-10-06",
+          "is_decoy": false,
+          "finding_date": "2026-10-06",
+          "finding_kind": "event",
+          "cause_ok": true,
+          "sentiment_ok": true,
+          "evidence_hits": 2,
+          "evidence_total": 2,
+          "cause": "拾光推出新品「黑糖芋頭鮮奶」，社群開箱與門市排隊分享引發大量正面討論。"
+        }
+      ],
+      "n_event_findings": 3,
+      "n_true_event_findings": 3
+    },
+    {
+      "scenario": "phone",
+      "checks": [
+        {
+          "event_id": "phone_launch",
+          "planted_date": "2026-08-07",
+          "is_decoy": false,
+          "finding_date": "2026-08-08",
+          "finding_kind": "event",
+          "cause_ok": true,
+          "sentiment_ok": true,
+          "evidence_hits": 2,
+          "evidence_total": 2,
+          "cause": "雲豹手機於 2026-08-07–08 舉辦 X9 發表會並公布定價（比預期便宜約 NT$2,000）與規格升級，造成討論暴增。"
+        },
+        {
+          "event_id": "phone_decoy_leopard",
+          "planted_date": "2026-08-20",
+          "is_decoy": true,
+          "finding_date": "2026-08-20",
+          "finding_kind": "unrelated",
+          "cause_ok": null,
+          "sentiment_ok": null,
+          "evidence_hits": 0,
+          "evidence_total": 0,
+          "cause": "PTT 上有多篇討論臺灣雲豹（動物）保育、紅外線相機尋找雲豹的新聞／討論，與品牌產品無關但因同名造成聲量上升。"
+        },
+        {
+          "event_id": "phone_green_line",
+          "planted_date": "2026-09-01",
+          "is_decoy": false,
+          "finding_date": "2026-09-01",
+          "finding_kind": "event",
+          "cause_ok": true,
+          "sentiment_ok": true,
+          "evidence_hits": 3,
+          "evidence_total": 3,
+          "cause": "多名雲豹手機 X9 首發用戶回報螢幕出現『綠線』瑕疵，且送修需等待約三週，導致大量負面回報與抱怨。"
+        },
+        {
+          "event_id": "phone_repair",
+          "planted_date": "2026-09-22",
+          "is_decoy": false,
+          "finding_date": "2026-09-22",
+          "finding_kind": "event",
+          "cause_ok": true,
+          "sentiment_ok": true,
+          "evidence_hits": 2,
+          "evidence_total": 2,
+          "cause": "官方宣布針對 X9 綠線問題一律免費換螢幕並延長保固一年，並有用戶實際分享快速換機經驗，帶動正面討論回升。"
+        }
+      ],
+      "n_event_findings": 3,
+      "n_true_event_findings": 3
+    }
+  ]
+}

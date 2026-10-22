@@ -1,0 +1,16 @@
+__pycache__/
+*.py[cod]
+*.egg-info/
+.pytest_cache/
+.ruff_cache/
+.venv/
+venv/
+
+# secrets
+.env
+
+# local data: scraped posts and caches are NOT published (copyright + privacy)
+data/
+reports/
+
+.DS_Store

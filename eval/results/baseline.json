@@ -1,0 +1,165 @@
+{
+  "summary": {
+    "event_recall": 1.0,
+    "event_precision": 0.818,
+    "decoy_rejection": 0.0,
+    "cause_accuracy": 1.0,
+    "sentiment_accuracy": 0.889,
+    "evidence_precision": 1.0
+  },
+  "scenarios": [
+    {
+      "scenario": "coffee",
+      "checks": [
+        {
+          "event_id": "coffee_ice",
+          "planted_date": "2026-08-12",
+          "is_decoy": false,
+          "finding_date": "2026-08-12",
+          "finding_kind": "event",
+          "cause_ok": true,
+          "sentiment_ok": true,
+          "evidence_hits": 3,
+          "evidence_total": 3,
+          "cause": "關鍵詞：冰塊、食安、驗結果、複驗、大腸桿菌"
+        },
+        {
+          "event_id": "coffee_decoy_sunrise",
+          "planted_date": "2026-08-27",
+          "is_decoy": true,
+          "finding_date": "2026-08-27",
+          "finding_kind": "event",
+          "cause_ok": null,
+          "sentiment_ok": null,
+          "evidence_hits": 0,
+          "evidence_total": 0,
+          "cause": "關鍵詞：雲海、合歡山、連假、人好多、構圖很棒"
+        },
+        {
+          "event_id": "coffee_collab",
+          "planted_date": "2026-09-08",
+          "is_decoy": false,
+          "finding_date": "2026-09-08",
+          "finding_kind": "event",
+          "cause_ok": true,
+          "sentiment_ok": true,
+          "evidence_hits": 3,
+          "evidence_total": 3,
+          "cause": "關鍵詞：超可愛、補貨、聯名杯套、全套、網拍"
+        },
+        {
+          "event_id": "coffee_app",
+          "planted_date": "2026-09-30",
+          "is_decoy": false,
+          "finding_date": "2026-09-30",
+          "finding_kind": "event",
+          "cause_ok": true,
+          "sentiment_ok": true,
+          "evidence_hits": 3,
+          "evidence_total": 3,
+          "cause": "關鍵詞：系統、活動、當機、App、延長三天"
+        }
+      ],
+      "n_event_findings": 4,
+      "n_true_event_findings": 3
+    },
+    {
+      "scenario": "tea",
+      "checks": [
+        {
+          "event_id": "tea_price",
+          "planted_date": "2026-08-05",
+          "is_decoy": false,
+          "finding_date": "2026-08-05",
+          "finding_kind": "event",
+          "cause_ok": true,
+          "sentiment_ok": false,
+          "evidence_hits": 3,
+          "evidence_total": 3,
+          "cause": "關鍵詞：漲價、上升、成本、佛心公司、感謝"
+        },
+        {
+          "event_id": "tea_expired",
+          "planted_date": "2026-09-16",
+          "is_decoy": false,
+          "finding_date": "2026-09-16",
+          "finding_kind": "event",
+          "cause_ok": true,
+          "sentiment_ok": true,
+          "evidence_hits": 3,
+          "evidence_total": 3,
+          "cause": "關鍵詞：過期茶葉、調查、員工、貼標、也太"
+        },
+        {
+          "event_id": "tea_taro",
+          "planted_date": "2026-10-06",
+          "is_decoy": false,
+          "finding_date": "2026-10-06",
+          "finding_kind": "event",
+          "cause_ok": true,
+          "sentiment_ok": true,
+          "evidence_hits": 3,
+          "evidence_total": 3,
+          "cause": "關鍵詞：黑糖、新品、好喝、太甜、回購"
+        }
+      ],
+      "n_event_findings": 3,
+      "n_true_event_findings": 3
+    },
+    {
+      "scenario": "phone",
+      "checks": [
+        {
+          "event_id": "phone_launch",
+          "planted_date": "2026-08-07",
+          "is_decoy": false,
+          "finding_date": "2026-08-08",
+          "finding_kind": "event",
+          "cause_ok": true,
+          "sentiment_ok": true,
+          "evidence_hits": 3,
+          "evidence_total": 3,
+          "cause": "關鍵詞：X9、規格升級不少、這個定價、已經預購了、等開箱"
+        },
+        {
+          "event_id": "phone_decoy_leopard",
+          "planted_date": "2026-08-20",
+          "is_decoy": true,
+          "finding_date": "2026-08-20",
+          "finding_kind": "event",
+          "cause_ok": null,
+          "sentiment_ok": null,
+          "evidence_hits": 0,
+          "evidence_total": 0,
+          "cause": "關鍵詞：森林、持續、紀錄片、臺灣、希望"
+        },
+        {
+          "event_id": "phone_green_line",
+          "planted_date": "2026-09-01",
+          "is_decoy": false,
+          "finding_date": "2026-09-01",
+          "finding_kind": "event",
+          "cause_ok": true,
+          "sentiment_ok": true,
+          "evidence_hits": 3,
+          "evidence_total": 3,
+          "cause": "關鍵詞：綠線、首發、X9、送修、出現"
+        },
+        {
+          "event_id": "phone_repair",
+          "planted_date": "2026-09-22",
+          "is_decoy": false,
+          "finding_date": "2026-09-22",
+          "finding_kind": "event",
+          "cause_ok": true,
+          "sentiment_ok": true,
+          "evidence_hits": 3,
+          "evidence_total": 3,
+          "cause": "關鍵詞：有誠意、免費換螢幕、宣布、X9、綠線"
+        }
+      ],
+      "n_event_findings": 4,
+      "n_true_event_findings": 3
+    }
+  ]
+}
